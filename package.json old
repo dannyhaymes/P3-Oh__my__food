@@ -1,0 +1,10 @@
+{
+    "name": "project3",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "prefix": "postcss ./public/styles/main.css --use autoprefixer -d ./public/styles/prefixed",
+        "sass": "sass --watch ./css/sass/main.scss:./css/main.css --style expanded"
+    }
+}

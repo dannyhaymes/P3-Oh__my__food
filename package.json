@@ -1,0 +1,20 @@
+{
+  "name": "p3-ohmyfood__en",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prefix": "postcss ./public/styles/main.css --use autoprefixer -d ./public/styles/prefixed",
+    "sass": "sass --watch ./css/sass/main.scss:./css/main.css --style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dannyhaymes/P3-Oh__my__food.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dannyhaymes/P3-Oh__my__food/issues"
+  },
+  "homepage": "https://github.com/dannyhaymes/P3-Oh__my__food#readme"
+}
