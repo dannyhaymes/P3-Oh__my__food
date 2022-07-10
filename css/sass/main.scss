@@ -1,11 +1,27 @@
+@import "base/_normalise.scss/"
+
 body {
     color: black;
-    font-family: 'Roboto__condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    max-width: 375px;
     padding-top: 0;
     margin-top: 0;
-    margin-left: 35px;
-    margin-right: 35px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.location {
+    background-color: #f2f2f2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 0;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
 }
