@@ -1,20 +1,8 @@
 @import "base/normalize";
-
-body {
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    padding-top: 0;
-    margin-top: 0;
-}
-
-.header {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
+@import "base/base";
+@import "layout/header";
+@import "utils/variables";
+@import "pages/home";
 
 .location {
     background-color: #f2f2f2;
