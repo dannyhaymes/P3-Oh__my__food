@@ -439,6 +439,7 @@ body {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  gap: 0;
   display: flex;
   flex-direction: column;
 }
@@ -448,22 +449,41 @@ body {
 }
 .restaurants-card__head {
   font-size: 16px;
-  margin-top: -15px;
+  margin: 0;
 }
 .restaurants-card__location {
   font-size: 14px;
-  margin-top: -7px;
+  margin: 0;
 }
 .restaurants-new {
   background-color: #99e2d0;
+  font-size: 12px;
+  font-weight: bold;
+  color: darkgreen;
   width: 60px;
   height: 25px;
-  position: relative;
-  top: -128px;
-  left: 235px;
+  margin: 13px 0 0 235px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
 }
-.restaurants-new__text {
-  font-size: 12px;
+.restaurants-heart {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: -20px;
+  left: 260px;
+}
+
+.footer {
+  background-color: #282828;
+  color: whitesmoke;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-head {
+  font-family: shrikhand;
 }
 
 /*# sourceMappingURL=main.css.map */
