@@ -476,6 +476,18 @@ body {
   top: -20px;
   left: 260px;
 }
+.restaurants-heart-filled {
+  background-image: linear-gradient(to bottom right, #9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  top: -36px;
+  opacity: 0;
+}
+.restaurants-heart:hover {
+  transition: opacity 0.3s linear 2s;
+  opacity: 1;
+}
 
 .footer {
   background-color: #282828;
