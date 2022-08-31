@@ -149,6 +149,7 @@
         margin: 13px 0 0 235px;
         position: absolute;
         display: flex;
+        align-items: center;
         justify-content: center;
     }
     &-heart {
@@ -163,6 +164,7 @@
     background-color:#282828;
     color:whitesmoke;
     gap: 5px;
+    padding-left: 15px;
     display: flex;
     flex-direction: column;
     &-head {
