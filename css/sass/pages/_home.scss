@@ -107,6 +107,7 @@
 .restaurants {
     background-color: whitesmoke;
     padding-top: 20px;
+    padding-bottom: 30px;
     gap: 10px;
     display: flex;
     flex-direction: column;
@@ -174,10 +175,15 @@
             color: transparent;
             top: -36px;
             opacity: 0;
+            background-position: top;
+            transition: transform .5s ease;
         }
+
         &:hover {
             transition: opacity 0.3s linear 2s;
             opacity: 1;
+            transform: scaleY(1s);
+
         }
     }
 }
