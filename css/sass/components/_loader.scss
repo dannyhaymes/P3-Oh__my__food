@@ -1,0 +1,32 @@
+.loader {
+    background-color:$secondary-color;
+    border: 16px solid $primary-color;
+    border-top: 16px solid $tertiary-color;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+
+    &-holder {
+        background-color: rgba(whitesmoke, 85%);
+        position: fixed;
+        top: 0px;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: vanish 0s 2.5s forwards;
+
+    }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes vanish {
+    100% { transform: translate(-1400px);}
+}

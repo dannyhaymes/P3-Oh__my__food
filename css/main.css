@@ -505,13 +505,75 @@ body {
 .footer {
   background-color: #282828;
   color: whitesmoke;
-  gap: 5px;
+  gap: 7px;
   padding-left: 15px;
   display: flex;
   flex-direction: column;
 }
 .footer-head {
+  font-family: "Shrikhand", cursive;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.header-arrow {
+  font-size: 24px;
+  position: relative;
+  left: -53px;
+  bottom: -5px;
+}
+
+.menu-img {
+  width: 375px;
+}
+
+.menu-holder {
+  background-color: whitesmoke;
+}
+
+.menu-head__title {
   font-family: shrikhand;
+  display: flex;
+  flex-direction: row;
+}
+
+.loader {
+  background-color: #ff79da;
+  border: 16px solid #9356dc;
+  border-top: 16px solid #99e2d0;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+.loader-holder {
+  background-color: rgba(245, 245, 245, 0.85);
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: vanish 0s 2.5s forwards;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes vanish {
+  100% {
+    transform: translate(-1400px);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
