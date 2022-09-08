@@ -1,0 +1,12 @@
+.footer {
+    background-color: #282828;
+    color: whitesmoke;
+    gap: 7px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+
+    &-head {
+        font-family: 'Shrikhand', cursive;
+    }
+}

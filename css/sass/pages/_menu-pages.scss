@@ -1,0 +1,69 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    &-arrow {
+        font-size: 24px;
+        position: relative;
+        left: -53px;
+        bottom: -5px;
+    }
+}
+
+.menu-img {
+    width: 375px;
+}
+
+.menu-holder {
+    width: 375px;
+    background-color: whitesmoke;
+    border-radius: 35px 35px 0 0;
+    padding-bottom: 15px;
+}
+
+.menu-head {
+    margin: 15px;
+    padding-top: 35px;
+
+    &__title {
+        font-family: shrikhand;
+        font-size: 32px;
+    }
+    &__heart {
+        position: absolute;
+        right: 10px;
+    }
+}
+
+.course-head {
+    border-bottom: 3px solid $tertiary-color;
+    padding-bottom: 3px;
+    margin-left: 15px;
+}
+
+.item-card {
+    margin: 10px;
+    width: 360px;
+    background-color: white;
+    border-radius: 15px;
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+
+    &__head {
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    &__text {
+        margin-left: 10px;
+    }
+
+    &__cost {
+        font-weight: bold;
+        margin-left: 10px;
+    }
+}
