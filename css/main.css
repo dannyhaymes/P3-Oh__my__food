@@ -324,6 +324,18 @@ body {
   margin-bottom: 15px;
 }
 
+.footer {
+  background-color: #282828;
+  color: whitesmoke;
+  gap: 7px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-head {
+  font-family: "Shrikhand", cursive;
+}
+
 .location {
   font-size: 16px;
   background-color: #e8e8e8;
@@ -543,7 +555,7 @@ body {
 }
 .menu-head__title {
   font-family: shrikhand;
-  font-size: 32px;
+  font-size: 24px;
 }
 .menu-head__heart {
   position: absolute;
@@ -577,6 +589,23 @@ body {
 .item-card__cost {
   font-weight: bold;
   margin-left: 10px;
+}
+
+.order-box {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+.order-button {
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  color: white;
+  box-shadow: 0 3px 3px #d3d3d3;
+  border-radius: 30px;
+  width: 250px;
+  height: 55px;
+  font-size: 18px;
+  border: 0;
 }
 
 .loader {
