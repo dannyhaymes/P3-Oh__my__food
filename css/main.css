@@ -324,19 +324,6 @@ body {
   margin-bottom: 15px;
 }
 
-.footer {
-  width: 100%;
-  background-color: #282828;
-  color: whitesmoke;
-  gap: 7px;
-  padding-left: 15px;
-  display: flex;
-  flex-direction: column;
-}
-.footer-head {
-  font-family: "Shrikhand", cursive;
-}
-
 .location {
   font-size: 16px;
   background-color: #e8e8e8;
@@ -540,32 +527,6 @@ body {
   transform: scaleY(0);
 }
 
-.footer {
-  background-color: #282828;
-  color: whitesmoke;
-  gap: 7px;
-  padding-left: 15px;
-  display: flex;
-  flex-direction: column;
-}
-@media only screen and (min-width: 992px) {
-  .footer {
-    flex-flow: row;
-    align-items: center;
-  }
-}
-.footer-head {
-  font-family: "Shrikhand", cursive;
-}
-.footer-options {
-  display: flex;
-}
-@media only screen and (min-width: 992px) {
-  .footer-options {
-    justify-content: space-between;
-  }
-}
-
 .header {
   display: flex;
   flex-direction: row;
@@ -625,15 +586,15 @@ body {
   width: 360px;
   background-color: white;
   border-radius: 15px;
+}
+.item-card__animation {
   gap: 2px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
-@media only screen and (min-width: 992px) {
-  .item-card {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+.item-card__info {
+  display: flex;
+  flex-direction: column;
 }
 .item-card__head {
   margin-top: 10px;
@@ -664,6 +625,35 @@ body {
   height: 55px;
   font-size: 18px;
   border: 0;
+}
+
+.footer {
+  width: 100%;
+  background-color: #282828;
+  color: whitesmoke;
+  gap: 7px;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 992px) {
+  .footer {
+    flex-flow: column;
+    align-items: center;
+  }
+}
+.footer-head {
+  font-family: "Shrikhand", cursive;
+}
+.footer-options {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 992px) {
+  .footer-options {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
 }
 
 .loader {
@@ -698,7 +688,7 @@ body {
 }
 @keyframes vanish {
   100% {
-    transform: translate(-1400px);
+    transform: scale(0);
   }
 }
 

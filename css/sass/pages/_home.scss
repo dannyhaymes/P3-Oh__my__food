@@ -216,28 +216,3 @@
         }
     }
 }
-
-.footer {
-    background-color: #282828;
-    color: whitesmoke;
-    gap: 7px;
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    @include desktop {
-        flex-flow: row;
-        align-items: center;
-    }
-
-
-    &-head {
-        font-family: 'Shrikhand', cursive;
-    }
-
-    &-options {
-        display: flex;
-        @include desktop {
-            justify-content: space-between;
-        }
-    }
-}

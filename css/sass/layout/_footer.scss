@@ -3,11 +3,25 @@
     background-color: #282828;
     color: whitesmoke;
     gap: 7px;
-    padding-left: 15px;
     display: flex;
     flex-direction: column;
+    @include desktop {
+        flex-flow: column;
+        align-items: center;
+    }
+
 
     &-head {
         font-family: 'Shrikhand', cursive;
+    }
+
+    &-options {
+        display: flex;
+        flex-direction: column;
+        @include desktop {
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+        }
     }
 }
