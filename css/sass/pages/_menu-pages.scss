@@ -13,10 +13,18 @@
 
 .menu-img {
     width: 375px;
+    @include desktop {
+        width: 75%;
+        display: flex;
+        align-self: center;
+    }
 }
 
 .menu-holder {
     width: 375px;
+    @include desktop {
+        width: 100%;
+    }
     background-color: whitesmoke;
     border-radius: 35px 35px 0 0;
     padding-bottom: 15px;
@@ -50,6 +58,10 @@
     gap: 2px;
     display: flex;
     flex-direction: column;
+    @include desktop {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
     &__head {
         margin-top: 10px;

@@ -16,6 +16,9 @@
     background-color: whitesmoke;
     gap: 30px;
     padding-bottom: 60px;
+    @include desktop {
+        padding-bottom: 30px;
+    }
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -225,6 +228,7 @@
         flex-flow: row;
         align-items: center;
     }
+
 
     &-head {
         font-family: 'Shrikhand', cursive;
