@@ -53,16 +53,27 @@
 .item-card {
     margin: 10px;
     width: 360px;
+    height: 80px;
     background-color: white;
     border-radius: 15px;
+    // overflow: hidden;
+
 
     &__animation {
+        width: 420px;
         gap: 2px;
         display: flex;
         flex-direction: row;
+        align-items: flex-end;
+        transition: width .5s ease;
+        &:hover {
+            width: 200px;
+    
+        }
     }
 
     &__info {
+        width: 300px;
         display: flex;
         flex-direction: column;
     }
@@ -76,12 +87,23 @@
 
     &__text {
         margin-left: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     &__cost {
+        width: 60px;
         font-weight: bold;
         margin-left: 10px;
     }
+
+    &__checkbox {
+        width: 40px;
+        background-color: $tertiary-color;
+
+    }
+
 }
 
 .order {

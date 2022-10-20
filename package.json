@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prefix": "postcss ./public/styles/main.css --use autoprefixer -d ./public/styles/prefixed",
+    "prefix": "postcss ./sass/main.css --use autoprefixer -d ./sass/prefixed",
     "sass": "sass --watch ./css/sass/main.scss:./css/main.css --style expanded"
   },
   "repository": {

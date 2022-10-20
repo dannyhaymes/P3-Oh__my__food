@@ -462,6 +462,7 @@ body {
   margin-right: 30px;
   background-color: white;
   border-radius: 15px;
+  text-decoration: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   gap: 0;
   display: flex;
@@ -470,14 +471,18 @@ body {
 .restaurants-card__image {
   height: 75%;
   border-radius: 15px 15px 0 0;
+  object-fit: cover;
 }
 .restaurants-card__head {
+  color: black;
   font-size: 16px;
   padding-left: 10px;
   padding-top: 5px;
   margin: 0;
 }
 .restaurants-card__location {
+  color: black;
+  text-decoration: none;
   padding-left: 10px;
   font-size: 14px;
   margin: 0;
@@ -501,6 +506,7 @@ body {
   position: relative;
   top: -20px;
   left: 260px;
+  color: black;
 }
 .restaurants-heart-filled {
   background-image: linear-gradient(to bottom right, #9356dc, #ff79da);
@@ -510,6 +516,7 @@ body {
   background-position: top;
 }
 .restaurants-heart-overlay {
+  color: black;
   width: 16px;
   height: 16px;
   position: absolute;
@@ -584,15 +591,23 @@ body {
 .item-card {
   margin: 10px;
   width: 360px;
+  height: 80px;
   background-color: white;
   border-radius: 15px;
 }
 .item-card__animation {
+  width: 420px;
   gap: 2px;
   display: flex;
   flex-direction: row;
+  align-items: flex-end;
+  transition: width 0.5s ease;
+}
+.item-card__animation:hover {
+  width: 200px;
 }
 .item-card__info {
+  width: 300px;
   display: flex;
   flex-direction: column;
 }
@@ -604,10 +619,18 @@ body {
 }
 .item-card__text {
   margin-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .item-card__cost {
+  width: 60px;
   font-weight: bold;
   margin-left: 10px;
+}
+.item-card__checkbox {
+  width: 40px;
+  background-color: #99e2d0;
 }
 
 .order-box {
@@ -645,6 +668,7 @@ body {
   font-family: "Shrikhand", cursive;
 }
 .footer-options {
+  padding-bottom: 15px;
   display: flex;
   flex-direction: column;
 }
