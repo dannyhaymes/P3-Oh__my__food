@@ -447,7 +447,6 @@ body {
 }
 .restaurants-head {
   font-size: 24px;
-  margin-left: 30px;
 }
 @media only screen and (min-width: 992px) {
   .restaurants-head {
@@ -520,6 +519,7 @@ body {
   width: 16px;
   height: 16px;
   position: absolute;
+  top: 0;
   left: 0;
   background-color: white;
   transform-origin: top center;
@@ -528,6 +528,7 @@ body {
 }
 .restaurants-heart-empty {
   position: absolute;
+  top: 0;
   left: 0;
 }
 .restaurants-heart:hover > .restaurants-heart-overlay {

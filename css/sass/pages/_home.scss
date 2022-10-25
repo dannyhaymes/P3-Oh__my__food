@@ -131,7 +131,6 @@
 
     &-head {
         font-size: 24px;
-        margin-left: 30px;
 
         @include desktop {
             width: 100%;
@@ -210,6 +209,7 @@
             width: 16px;
             height: 16px;
             position: absolute;
+            top: 0;
             left: 0;
             background-color: white;
             transform-origin: top center;
@@ -219,6 +219,7 @@
 
         &-empty {
             position: absolute;
+            top: 0;
             left: 0;
         }
 
