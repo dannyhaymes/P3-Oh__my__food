@@ -667,11 +667,14 @@ body {
 }
 .footer-head {
   font-family: "Shrikhand", cursive;
+  padding-left: 15px;
 }
 .footer-options {
+  padding-left: 15px;
   padding-bottom: 15px;
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 @media only screen and (min-width: 992px) {
   .footer-options {

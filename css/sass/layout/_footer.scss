@@ -13,12 +13,15 @@
 
     &-head {
         font-family: 'Shrikhand', cursive;
+        padding-left: 15px;
     }
 
     &-options {
+        padding-left: 15px;
         padding-bottom: 15px;
         display: flex;
         flex-direction: column;
+        gap: 5px;
         @include desktop {
             flex-direction: row;
             width: 100%;
