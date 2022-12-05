@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
+
     &-arrow {
         font-size: 24px;
         position: relative;
@@ -13,6 +13,7 @@
 
 .menu-img {
     width: 375px;
+
     @include desktop {
         width: 75%;
         display: flex;
@@ -22,14 +23,22 @@
 
 .menu-holder {
     width: 375px;
+
     @include desktop {
         width: 100%;
     }
+
     background-color: whitesmoke;
     border-radius: 35px 35px 0 0;
     padding-bottom: 15px;
 }
 
+.menu-subsections {
+    @include desktop {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
 .menu-head {
     margin: 15px;
     padding-top: 35px;
@@ -38,6 +47,7 @@
         font-family: shrikhand;
         font-size: 24px;
     }
+
     &__heart {
         position: absolute;
         right: 10px;
@@ -54,39 +64,46 @@
     margin: 10px;
     width: 360px;
     height: 80px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: white;
     border-radius: 15px;
-    // overflow: hidden;
+    overflow: hidden;
+
 
 
     &__animation {
         width: 420px;
+        height: 80px;
         gap: 2px;
         display: flex;
         flex-direction: row;
         align-items: flex-end;
         transition: width .5s ease;
+
         &:hover {
-            width: 200px;
-    
+            width: 360px;
         }
     }
 
     &__info {
         width: 300px;
+        height: 80px;
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
     }
 
     &__head {
-        margin-top: 10px;
-        margin-left: 10px;
+        // margin-top: 10px;
+        // margin-left: 10px;
+        margin: 0;
         font-size: 18px;
         font-weight: bold;
     }
 
     &__text {
-        margin-left: 10px;
+        // margin-left: 10px;
+        margin: 0;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -94,24 +111,30 @@
 
     &__cost {
         width: 60px;
+        // height: 80px;
         font-weight: bold;
-        margin-left: 10px;
+        // margin-left: 10px;
+        margin: 0;
+        padding-bottom: 10px;
     }
 
     &__checkbox {
         width: 40px;
+        height: 80px;
         background-color: $tertiary-color;
-
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 }
 
 .order {
     &-box {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    display: flex;
-    justify-content: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        display: flex;
+        justify-content: center;
     }
 
     &-button {
@@ -119,7 +142,7 @@
         color: white;
         box-shadow: 0 3px 3px #d3d3d3;
         border-radius: 30px;
-        width: 250px;
+        width: 200px;
         height: 55px;
         font-size: 18px;
         border: 0;
