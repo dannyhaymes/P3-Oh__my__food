@@ -585,7 +585,7 @@ body {
 .menu-subsections {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   width: 375px;
 }
@@ -593,7 +593,7 @@ body {
   .menu-subsections {
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
   }
 }
@@ -753,7 +753,7 @@ body {
 }
 @media only screen and (min-width: 992px) {
   .footer {
-    flex-flow: column;
+    flex-flow: row;
     align-items: center;
   }
 }

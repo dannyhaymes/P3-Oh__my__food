@@ -48,14 +48,14 @@
 .menu-subsections {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     width: 375px;
 
     @include tablet {
         width: 100%;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
     }
 }
