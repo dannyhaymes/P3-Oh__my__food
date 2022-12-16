@@ -8,21 +8,33 @@
         position: relative;
         left: -53px;
         bottom: -5px;
+        color:  $secondary-color;
     }
 }
 
+.image-holder {
+    display: flex;
+    justify-content: center;
+}
+
 .menu-img {
-    width: 375px;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
 
     @include desktop {
-        width: 75%;
         display: flex;
         align-self: center;
     }
 }
 
 .menu-holder {
-    width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -35px;
+    position: relative;
+    z-index: 10000;
 
     @include desktop {
         width: 100%;
@@ -38,17 +50,21 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    width: 375px;
 
-    // @include tablet {
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: center;
-    // }
+    @include tablet {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .menu-head {
-    margin: 15px;
+    position: relative;
+    width: 365px;
     padding-top: 35px;
+    padding-left: 10px;
 
     &__title {
         font-family: shrikhand;
@@ -62,9 +78,16 @@
 }
 
 .course-head {
-    border-bottom: 3px solid $tertiary-color;
-    padding-bottom: 3px;
+    // border-bottom: 3px solid $tertiary-color;
+    padding-bottom: -30px;
     margin-left: 15px;
+
+    &__underbar {
+        width: 40px;
+        height: 3px;
+        background-color: $tertiary-color;
+        margin: 15px;
+    }
 }
 
 .item-card {
@@ -75,7 +98,20 @@
     background-color: white;
     border-radius: 15px;
     overflow: hidden;
-    animation: menu-loader .5s linear forwards;
+
+    &--first {
+        animation: menu-loader .5s linear forwards;
+    }
+
+    &--second {
+        animation: menu-loader .5s linear .2s forwards;
+    }    
+    &--third {
+        animation: menu-loader .5s linear .4s forwards;
+    }
+    &--fourth {
+        animation: menu-loader .5s linear .6s forwards;
+    }
 
 
 
@@ -96,6 +132,10 @@
 
         &:hover i {
             animation: spin .5s linear forwards;
+        }
+
+        &:hover {
+            cursor: pointer;
         }
 
     }

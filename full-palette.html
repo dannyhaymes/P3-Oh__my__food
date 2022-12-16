@@ -19,7 +19,7 @@
 
 <body>
   <header class="header">
-    <nav> <a href="/" class="back-arrow"><i class="header-arrow fa-solid fa-arrow-left"></i></a>
+    <nav> <a href="./" class="back-arrow"><i class="header-arrow fa-solid fa-arrow-left"></i></a>
     </nav>
     <img class="oh-my-food__logo" src="img/logo/ohmyfood@2x.svg" alt="oh my food logo">
   </header>
@@ -33,12 +33,11 @@
       <a class="menu-head__title">The Full Palette</a>
       <i class="menu-head__heart fa-regular fa-heart"></i>
     </div>
-
     <div class="menu-subsections">
       <div>
-        <h4 class="course-head">ENTREES</h4>
-
-        <div class="item-card">
+        <a class="course-head">ENTREES</a>
+        <div class="course-head__underbar"></div>
+        <div class="item-card item-card--first">
           <div class="item-card__animation">
             <div class="item-card__info">
               <p class="item-card__head">Escargot</p>
@@ -51,7 +50,7 @@
           </div>
         </div>
 
-        <div class="item-card">
+        <div class="item-card item-card--second">
           <div class="item-card__animation">
             <div class="item-card__info">
               <p class="item-card__head">Duck Foie Gras</p>
@@ -64,7 +63,7 @@
           </div>
         </div>
 
-        <div class="item-card">
+        <div class="item-card item-card--third">
           <div class="item-card__animation">
             <div class="item-card__info">
               <p class="item-card__head">Fried egg</p>
@@ -78,91 +77,89 @@
         </div>
       </div>
 
-      <div class="menu-subsections">
-        <div>
-          <h4 class="course-head">MAIN DISH</h4>
 
-          <div class="item-card">
-            <div class="item-card__animation">
-              <div class="item-card__info">
-                <p class="item-card__head">Herb-Encrusted Steak</p>
-                <p class="item-card__text">With delicately sliced and seasoned vegetables</p>
-              </div>
-              <p class="item-card__cost">40€</p>
-              <div class="item-card__checkbox">
-                <i class="fa-solid fa-check"></i>
-              </div>
+      <div>
+        <a class="course-head">MAIN DISH</a>
+        <div class="course-head__underbar"></div>
+        <div class="item-card item-card--first">
+          <div class="item-card__animation">
+            <div class="item-card__info">
+              <p class="item-card__head">Herb-Encrusted Steak</p>
+              <p class="item-card__text">With delicately sliced and seasoned vegetables</p>
+            </div>
+            <p class="item-card__cost">40€</p>
+            <div class="item-card__checkbox">
+              <i class="fa-solid fa-check"></i>
             </div>
           </div>
+        </div>
 
-          <div class="item-card">
-            <div class="item-card__animation">
-              <div class="item-card__info">
-                <p class="item-card__head">Ox Tail Shepard's Pie</p>
-                <p class="item-card__text">With black truffle and pureed parsnips</p>
-              </div>
-              <p class="item-card__cost">35€</p>
-              <div class="item-card__checkbox">
-                <i class="fa-solid fa-check"></i>
-              </div>
+        <div class="item-card item-card--second">
+          <div class="item-card__animation">
+            <div class="item-card__info">
+              <p class="item-card__head">Ox Tail Shepard's Pie</p>
+              <p class="item-card__text">With black truffle and pureed parsnips</p>
+            </div>
+            <p class="item-card__cost">35€</p>
+            <div class="item-card__checkbox">
+              <i class="fa-solid fa-check"></i>
             </div>
           </div>
+        </div>
 
-          <div class="item-card">
-            <div class="item-card__animation">
-              <div class="item-card__info">
-                <p class="item-card__head">Filet of Sole</p>
-                <p class="item-card__text">With citrus dressing</p>
-              </div>
-              <p class="item-card__cost">44€</p>
-              <div class="item-card__checkbox">
-                <i class="fa-solid fa-check"></i>
-              </div>
+        <div class="item-card item-card--third">
+          <div class="item-card__animation">
+            <div class="item-card__info">
+              <p class="item-card__head">Filet of Sole</p>
+              <p class="item-card__text">With citrus dressing</p>
+            </div>
+            <p class="item-card__cost">44€</p>
+            <div class="item-card__checkbox">
+              <i class="fa-solid fa-check"></i>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="menu-subsections">
-        <div>
-          <h4 class="course-head">DESSERTS</h4>
 
-          <div class="item-card">
-            <div class="item-card__animation">
-              <div class="item-card__info">
-                <p class="item-card__head">Paris-Brest</p>
-                <p class="item-card__text">Revisted</p>
-              </div>
-              <p class="item-card__cost">18€</p>
-              <div class="item-card__checkbox">
-                <i class="fa-solid fa-check"></i>
-              </div>
+      <div>
+        <a class="course-head">DESSERTS</a>
+        <div class="course-head__underbar"></div>
+        <div class="item-card item-card--first">
+          <div class="item-card__animation">
+            <div class="item-card__info">
+              <p class="item-card__head">Paris-Brest</p>
+              <p class="item-card__text">Revisted</p>
+            </div>
+            <p class="item-card__cost">18€</p>
+            <div class="item-card__checkbox">
+              <i class="fa-solid fa-check"></i>
             </div>
           </div>
+        </div>
 
-          <div class="item-card">
-            <div class="item-card__animation">
-              <div class="item-card__info">
-                <p class="item-card__head">Chocolate Macaroons</p>
-                <p class="item-card__text">With vanilla ice cream</p>
-              </div>
-              <p class="item-card__cost">22€</p>
-              <div class="item-card__checkbox">
-                <i class="fa-solid fa-check"></i>
-              </div>
+        <div class="item-card item-card--second">
+          <div class="item-card__animation">
+            <div class="item-card__info">
+              <p class="item-card__head">Chocolate Macaroons</p>
+              <p class="item-card__text">With vanilla ice cream</p>
+            </div>
+            <p class="item-card__cost">22€</p>
+            <div class="item-card__checkbox">
+              <i class="fa-solid fa-check"></i>
             </div>
           </div>
+        </div>
 
-          <div class="item-card">
-            <div class="item-card__animation">
-              <div class="item-card__info">
-                <p class="item-card__head">Chocolate Mousse</p>
-                <p class="item-card__text">With spices and black truffle</p>
-              </div>
-              <p class="item-card__cost">23€</p>
-              <div class="item-card__checkbox">
-                <i class="fa-solid fa-check"></i>
-              </div>
+        <div class="item-card item-card--third">
+          <div class="item-card__animation">
+            <div class="item-card__info">
+              <p class="item-card__head">Chocolate Mousse</p>
+              <p class="item-card__text">With spices and black truffle</p>
+            </div>
+            <p class="item-card__cost">23€</p>
+            <div class="item-card__checkbox">
+              <i class="fa-solid fa-check"></i>
             </div>
           </div>
         </div>

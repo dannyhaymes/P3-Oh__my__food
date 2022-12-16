@@ -19,7 +19,8 @@
 
 <body>
   <header class="header">
-    <i class="header-arrow fa-solid fa-arrow-left"></i>
+    <nav> <a href="./" class="back-arrow"><i class="header-arrow fa-solid fa-arrow-left"></i></a>
+    </nav>
     <img class="oh-my-food__logo" src="img/logo/ohmyfood@2x.svg" alt="oh my food logo">
   </header>
 
@@ -35,12 +36,12 @@
     <div class="menu-subsections">
       <div>
         <a class="course-head">ENTREES</a>
-
-        <div class="item-card">
+        <div class="course-head__underbar"></div>
+        <div class="item-card item-card--first">
           <div class="item-card__animation">
             <div class="item-card__info">
-              <p class="item-card__head">Escargot</p>
-              <p class="item-card__text">With southern French spices</p>
+              <p class="item-card__head">Foie Gras Ravioli</p>
+              <p class="item-card__text">With truffle cream</p>
             </div>
             <p class="item-card__cost">25€</p>
             <div class="item-card__checkbox">
@@ -49,11 +50,11 @@
           </div>
         </div>
 
-        <div class="item-card">
+        <div class="item-card item-card--second">
           <div class="item-card__animation">
             <div class="item-card__info">
-              <p class="item-card__head">Duck Foie Gras</p>
-              <p class="item-card__text">With black truffle shavings</p>
+              <p class="item-card__head">Oscietra Caviar</p>
+              <p class="item-card__text">With buckwheat blinis</p>
             </div>
             <p class="item-card__cost">35€</p>
             <div class="item-card__checkbox">
@@ -62,13 +63,27 @@
           </div>
         </div>
 
-        <div class="item-card">
+        <div class="item-card item-card--third">
           <div class="item-card__animation">
             <div class="item-card__info">
-              <p class="item-card__head">Fried egg</p>
-              <p class="item-card__text">Seasoned with truffle cream and...</p>
+              <p class="item-card__head">Lobster and Leek Foam</p>
+              <p class="item-card__text">Marinated with orange zest</p>
             </div>
             <p class="item-card__cost">20€</p>
+            <div class="item-card__checkbox">
+              <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="item-card item-card--fourth">
+          <div class="item-card__animation">
+            <div class="item-card__info">
+              <p class="item-card__head">Duck Foie Gras</p>
+              <p class="item-card__text">With fig jam and grilled baugette</p>
+            </div>
+            <p class="item-card__cost">35€</p>
             <div class="item-card__checkbox">
               <i class="fa-solid fa-check"></i>
             </div>
@@ -79,12 +94,12 @@
 
       <div>
         <a class="course-head">MAIN DISH</a>
-
-        <div class="item-card">
+        <div class="course-head__underbar"></div>
+        <div class="item-card item-card--first">
           <div class="item-card__animation">
             <div class="item-card__info">
-              <p class="item-card__head">Herb-Encrusted Steak</p>
-              <p class="item-card__text">With delicately sliced and seasoned vegetables</p>
+              <p class="item-card__head">Fresh Buttered Scallops</p>
+              <p class="item-card__text">With white celery puree</p>
             </div>
             <p class="item-card__cost">40€</p>
             <div class="item-card__checkbox">
@@ -93,11 +108,11 @@
           </div>
         </div>
 
-        <div class="item-card">
+        <div class="item-card item-card--second">
           <div class="item-card__animation">
             <div class="item-card__info">
-              <p class="item-card__head">Ox Tail Shepard's Pie</p>
-              <p class="item-card__text">With black truffle and pureed parsnips</p>
+              <p class="item-card__head">Pan Fried Lobster</p>
+              <p class="item-card__text">With mashed sweet potatoes</p>
             </div>
             <p class="item-card__cost">35€</p>
             <div class="item-card__checkbox">
@@ -106,11 +121,11 @@
           </div>
         </div>
 
-        <div class="item-card">
+        <div class="item-card item-card--third">
           <div class="item-card__animation">
             <div class="item-card__info">
-              <p class="item-card__head">Filet of Sole</p>
-              <p class="item-card__text">With citrus dressing</p>
+              <p class="item-card__head">Braised Ox Tail</p>
+              <p class="item-card__text">With wild rice and lemon zest</p>
             </div>
             <p class="item-card__cost">44€</p>
             <div class="item-card__checkbox">
@@ -123,12 +138,12 @@
 
       <div>
         <a class="course-head">DESSERTS</a>
-
-        <div class="item-card">
+        <div class="course-head__underbar"></div>
+        <div class="item-card item-card--first">
           <div class="item-card__animation">
             <div class="item-card__info">
-              <p class="item-card__head">Paris-Brest</p>
-              <p class="item-card__text">Revisted</p>
+              <p class="item-card__head">Chocolate and Hazelnut Macaroon</p>
+              <p class="item-card__text">With caramel butter ice cream</p>
             </div>
             <p class="item-card__cost">18€</p>
             <div class="item-card__checkbox">
@@ -137,11 +152,11 @@
           </div>
         </div>
 
-        <div class="item-card">
+        <div class="item-card item-card--second">
           <div class="item-card__animation">
             <div class="item-card__info">
-              <p class="item-card__head">Chocolate Macaroons</p>
-              <p class="item-card__text">With vanilla ice cream</p>
+              <p class="item-card__head">Baba au rhum</p>
+              <p class="item-card__text">With lemon drizzle</p>
             </div>
             <p class="item-card__cost">22€</p>
             <div class="item-card__checkbox">
@@ -150,11 +165,11 @@
           </div>
         </div>
 
-        <div class="item-card">
+        <div class="item-card item-card--third">
           <div class="item-card__animation">
             <div class="item-card__info">
-              <p class="item-card__head">Chocolate Mousse</p>
-              <p class="item-card__text">With spices and black truffle</p>
+              <p class="item-card__head">Lemon Meringue Pie</p>
+              <p class="item-card__text">Deconstructed</p>
             </div>
             <p class="item-card__cost">23€</p>
             <div class="item-card__checkbox">

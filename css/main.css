@@ -545,6 +545,7 @@ body {
   position: relative;
   left: -53px;
   bottom: -5px;
+  color: #ff79da;
 }
 
 .image-holder {
@@ -613,9 +614,14 @@ body {
 }
 
 .course-head {
-  border-bottom: 3px solid #99e2d0;
-  padding-bottom: 3px;
+  padding-bottom: -30px;
   margin-left: 15px;
+}
+.course-head__underbar {
+  width: 40px;
+  height: 3px;
+  background-color: #99e2d0;
+  margin: 15px;
 }
 
 .item-card {
@@ -626,7 +632,18 @@ body {
   background-color: white;
   border-radius: 15px;
   overflow: hidden;
+}
+.item-card--first {
   animation: menu-loader 0.5s linear forwards;
+}
+.item-card--second {
+  animation: menu-loader 0.5s linear 0.2s forwards;
+}
+.item-card--third {
+  animation: menu-loader 0.5s linear 0.4s forwards;
+}
+.item-card--fourth {
+  animation: menu-loader 0.5s linear 0.6s forwards;
 }
 .item-card__animation {
   margin: 0;
@@ -644,6 +661,9 @@ body {
 }
 .item-card__animation:hover i {
   animation: spin 0.5s linear forwards;
+}
+.item-card__animation:hover {
+  cursor: pointer;
 }
 .item-card__info {
   width: 300px;
