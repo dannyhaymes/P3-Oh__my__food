@@ -5,6 +5,7 @@
     gap: 7px;
     display: flex;
     flex-direction: column;
+    
 
     @include desktop {
         flex-flow: row;
